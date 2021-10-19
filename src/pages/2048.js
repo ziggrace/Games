@@ -217,8 +217,8 @@ function TwentyFourtyEight(){
     }
 
     return (
-        <div className= "game">
-            <div>High Tile is: {highTile}</div>
+        <div className="game">
+            <div className="highTile">High Tile is: {highTile}</div>
             <div className="twenty-fourty-eight"> <div className="Board">{layout.map(obj=><Tile value={obj.value ? obj.value : null}/>)}</div>
 </div>
             {/* <div>
