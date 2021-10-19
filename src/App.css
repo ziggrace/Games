@@ -53,13 +53,20 @@ h1{
 }
 
 .Board {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  border-style: solid;
+  border-style: solid; */
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: 90vh;
 }
 
 .twenty-fourty-eight{
@@ -69,6 +76,8 @@ h1{
   flex-direction: row;
   height: 90vh;
   width: 90vh;
+  border: 4px solid;
+  border-radius: 10%;
 }
 .highTile{
   height: 5vh;

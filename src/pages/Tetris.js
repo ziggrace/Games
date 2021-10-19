@@ -3,7 +3,7 @@ import useEventListener from '@use-it/event-listener'
 
 function Tetris(){
     return (
-        <div>Tetris</div>
+        <div>Tetris (coming soon)</div>
     )
 }
 

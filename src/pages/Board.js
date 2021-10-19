@@ -22,7 +22,10 @@ function Board() {
             console.log(board[i].key, i)
             if (board[i].key !== i) return;
         }
-        if (board.length) setisWinner(true)
+        if (board.length) {
+            setisWinner(true)
+            console.log("you won")
+        }
     }
 
     const boardInit = () =>{
@@ -106,7 +109,7 @@ function Board() {
     }
     return (
       <div className="Board">
-        {board.map(obj => <Tile key={obj.key} value={obj.key ? obj.key : null} onClick={tileSwap}/>)}
+        {board.map(obj => <Tile key={obj.key} value={obj.key ? obj.key : null} onClick={tileSwap} slide={true}/>)}
       </div>
     );
   }
